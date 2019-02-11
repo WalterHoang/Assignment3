@@ -1,0 +1,12 @@
+/* overall */
+body { font-face: sans-serif; margin: 0px;}
+button { border: 1px solid black; background: #ccc; font-size: large;}
+form, p, div { font-family: sans-serif;}
+/* make these buttons have a red background */
+#Clear_Contact {background: red;}
+/* make this button have a grey background */
+#Contact_self {background: gray;}
+
+img { 
+max-width: 100%; 
+}

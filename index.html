@@ -1,0 +1,196 @@
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="phone.css">
+		<title> Walter's Phone Dialer </title> 
+	</head>
+	<body>
+	<!-- Tab bar -->
+		<div id="tabs"> 
+		<!-- Makes 4  tabs on the bar -->
+			<button id="Dialer" accesskey="p" role="navigation"> Dialer </button>
+			<button id="Contactlist" accesskey="c" role="navigation"> Contact List </button>
+			<button id="Add-Contact" accessKey="a" role="navigation"> Add Contact </button>
+			<button id="Help" accessKey="h" role="navigation"> Help/About </button>
+		</div>
+	<!-- Tab content -->
+		<div id="tab_content" role="main" aria-live="polite">
+			<div id="Content_Dialer">
+			<!-- Numpad with a display for the inputed number -->
+			 <h1>Dialer</h1>
+			  <form>
+			  <label for="number_input"> Dial </label>
+				  <input id="number_input"/>
+			  </form>
+			  <div id="dialer_pad">
+				  <div>
+					  <button id="dialer1" accessKey="1">1</button>
+					  <button id="dialer2"accessKey="2">2</button>
+					  <button id="dialer3" accessKey="3">3</button>
+				  </div>
+				  <div>
+					  <button id="dialer4" accessKey="4">4</button>
+					  <button id="dialer5" accessKey="5">5</button>
+					  <button id="dialer6" accessKey="6">6</button>
+				  </div>
+				  <div>
+					  <button id="dialer7" accessKey="7">7</button>
+					  <button id="dialer8" accessKey="8">8</button>
+					  <button id="dialer9" accessKey="9">9</button>
+				  </div>
+				  <div>
+					  <button id="dialer_star" accessKey="*">*</button>
+					  <button id="dialer0" accessKey="0">0</button>
+					  <button id="dialer_octothorpe" accessKey="#">#</button>
+				  </div>
+			  </div>
+			  <div id="dialer_controls">
+				  <button id="button_dial" accessKey="e">Dial</button>
+				  <button id="button_dialer_clear" accessKey="k">Clear</button>
+			  </div>
+		  </div>
+			<div id="Content_Contactlist">
+			<!-- Shows contacts in a table -->
+				<table id="contact_list">
+					<!-- Row 1 (header) -->
+					<th>Contacts</th>
+					<tr>
+						<td> Name </td>
+						<td> Number </td>
+					</tr>
+					<tr>
+						<td> Walter Hoang </td>
+						<td> 303-668-0548 </td>
+					</tr>
+					<tr>
+						<td> Mario Mario </td>
+						<td> 343-754-1111 </td>
+					</tr>
+				</table>
+			</div>
+		
+			<div id="Content_Add-Contact">
+			<!-- Shows a form to add a new contact -->
+			<h1> Add Contact </h1>
+			<form>
+				<label for="name">Name</label>
+				<input id="name" placeholder="Jane Smith">
+			</form>
+			<form>
+				<label for="number"> Number </label>
+				<input id="number" placeholder="123-456-7890">
+			</form>
+			<form>
+				<label for="email"> Email </label>
+				<input id="email" placeholder="JaneSmith@gmail.com">
+			</form>
+			<button id="Add_Contact"> Add Contact </button>
+			<button id="Clear_Contact"> Clear </button>
+			</div>
+			<div id="Content_help">
+				<div>
+					<p>This program is a practice program to implement basic accessibility features.
+					<br> Creator: Walter Hoang
+					<br> Original source of the accesskey image: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey
+					<br> Aria documentation: https://webaim.org/techniques/aria/
+					<br> Source Code: https://github.com/WalterHoang/WalterHoang.github.io/tree/master/Assignment%203
+					</p>
+				</div>
+				<div>
+					<h1> Accessibility features </h1>
+					<p> 1. All buttons can be accessed with the Tab Key.
+					<br> 2. Each tab of this dialer as well as all buttons in the dialer tab has a accesskey and thus a keyboard shortcut. 
+					<br> 3. An accessible table in the contacts tab as well as for the keyboard shortcuts here.
+					<br> 4. Basic ARIA landmark roles and a ARIA live region.
+					</p>
+				</div>
+				<table id= "shortcuts">
+					<th>Shortcuts</th>
+					<tr>
+						<td> Button </td>
+						<td> key </td>
+					</tr>
+					<tr>
+						<td> Dialer </td>
+						<td> p </td>
+					</tr>
+					<tr>
+						<td> Contact List </td>
+						<td> c </td>
+					</tr>
+					<tr>
+						<td> Add Contact </td>
+						<td> a </td>
+					</tr>
+					<tr>
+						<td> Help </td>
+						<td> h </td>
+					</tr>
+					<tr>
+						<td> Dial 1 </td>
+						<td> 1 </td>
+					</tr>
+					<tr>
+						<td> Dial 2 </td>
+						<td> 2 </td>
+					</tr>
+					<tr>
+						<td> Dial 3 </td>
+						<td> 3 </td>
+					</tr>
+					<tr>
+						<td> Dial 4 </td>
+						<td> 4 </td>
+					</tr>
+					<tr>
+						<td> Dial 5 </td>
+						<td> 5 </td>
+					</tr>
+					<tr>
+						<td> Dial 6 </td>
+						<td> 6 </td>
+					</tr>
+					<tr>
+						<td> Dial 7 </td>
+						<td> 7 </td>
+					</tr>
+					<tr>
+						<td> Dial 8 </td>
+						<td> 8 </td>
+					</tr>
+					<tr>
+						<td> Dial 9 </td>
+						<td> 9 </td>
+					</tr>
+					<tr>
+						<td> Dial 0 </td>
+						<td> 0 </td>
+					</tr>
+					<tr>
+						<td> Dial * </td>
+						<td> * </td>
+					</tr>
+					<tr>
+						<td> Dial # </td>
+						<td> # </td>
+					</tr>
+					<tr>
+						<td> Dial </td>
+						<td> e </td>
+					</tr>
+					<tr>
+						<td> Dial Clear </td>
+						<td> k </td>
+					</tr>
+				</table>
+				<div>
+				<h1> Accesskey combination reference </h1>
+				<img src="img.JPG" alt="accesskey combination help" longdesc="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey An image to help users find the right accesskey combination for their browser" />
+				</div>
+				
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="phone.js"></script>
+	</body>
+	
+</html>
