@@ -31,7 +31,7 @@ $("#Help").click(function() { // when "Help" is clicked
 	$("#Content_help").show();
 	// hide the other tab content
 	$("#Content_Dialer").hide();
-	$("#Content_Dialer").hide();	
+	$("#Content_Add-Contact").hide();	
 	$("#Content_Contactlist").hide();
 })
 
